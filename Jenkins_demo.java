@@ -1,4 +1,4 @@
-public class Hello {
+public class Jenkins_demo {
     public static void main(String[] args) {
         System.out.println("Hello from GitHub + Jenkins CI!");
     }
