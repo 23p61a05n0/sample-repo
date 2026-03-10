@@ -1,3 +1,15 @@
-Checking and monitoring should be well done
+echo "Creating Java Program"
 
-update monitoring
+cat << EOF > Hello.java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello from Jenkins Freestyle Project!");
+    }
+}
+EOF
+
+echo "Compiling Program"
+javac Hello.java
+
+echo "Running Program"
+java Hello
